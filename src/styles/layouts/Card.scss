@@ -1,0 +1,17 @@
+.card{
+    width: 97%;
+    overflow: hidden;
+    height: 400px;
+
+ .card-body{
+    background-color: $bg-section-color;
+    font-size: 12px;
+    .card-decorator{
+        width: 100%;
+        height: 40px;
+        background-color: $bg-section-color;
+        top:-20px;
+        transform: skewY(-4deg);
+    }
+ }
+}

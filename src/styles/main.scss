@@ -1,0 +1,42 @@
+@import './base/normalize.scss';
+@import './abstracts/palette.scss';
+@import './layouts/Header.scss';
+@import '@fontsource/roboto';
+@import '../styles/layouts/Carousel.scss';
+@import '../styles/layouts/Card.scss';
+*{
+    text-transform: uppercase;
+}
+
+a{
+    color:$primary-text-color;
+}
+
+.button-primary{
+color: $primary-text-color;
+background-color: $button-color;
+letter-spacing: 2px;
+transition: .5;
+}
+
+.button-primary:hover{
+color: $secondary-text-color;
+background-color: $button-hover-color;
+}
+a:hover{
+    color:$button-hover-color !important;
+}
+
+body{
+    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+
+hr{
+    border-bottom: 2px solid $primary-text-color;
+}
