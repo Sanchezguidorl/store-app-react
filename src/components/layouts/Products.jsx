@@ -1,28 +1,51 @@
-import {  useState } from "react";
+import { useState } from "react";
 import CardComponent from "./CardComponent";
-import { Col, Row } from "react-bootstrap";
+import { Col, Pagination, Row } from "react-bootstrap";
 import { useGetProducts, usePagination } from "../customHooks/CustomHooks";
 import Loading from "./Loading";
 
 function Products() {
-  const { productsData, loading, error } =useGetProducts();
+  const { productsData, loading, error } = useGetProducts();
   const [currentPage, setCurrentPage] = useState(2);
-  const {products, pages}=usePagination(productsData, currentPage);
-  const pagesDiv= pages.map((page)=> <h1 key={page}> Hola {page}</h1>);
-  
+  const { products, pages } = usePagination(productsData, currentPage);
+  const pageItem = pages.map((page) => (
+    <Pagination.Item
+      className=""
+      active={currentPage === page}
+      onClick={() => setCurrentPage(page)}
+      key={page}
+    >
+      {page}
+    </Pagination.Item>
+  ));
+
   return (
-<Row className="my-5 g-2 justify-content-center">
-      {!loading ?error? error : <>{ 
-      products.map((product) =>
-      <Col key={product.id} xs={12} sm={6} md={4} lg={3} className="p-0  d-flex justify-content-center">
-      <CardComponent product={product} />
-      </Col>
-      )}{
-      pagesDiv}
-      </>
-      :
-      <Loading/>
-      }
+    <Row className="my-5 g-2 justify-content-center">
+      {!loading ? (
+        error ? (
+          error
+        ) : (
+          <>
+            {products.map((product) => (
+              <Col
+                key={product.id}
+                xs={12}
+                sm={6}
+                md={4}
+                lg={3}
+                className="p-0  d-flex justify-content-center"
+              >
+                <CardComponent product={product} />
+              </Col>
+            ))}
+            <Pagination className="justify-content-center my-4">
+              {pageItem}
+            </Pagination>
+          </>
+        )
+      ) : (
+        <Loading />
+      )}
     </Row>
   );
 }

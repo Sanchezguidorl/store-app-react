@@ -1,0 +1,8 @@
+a.page-link{
+    color: $primary-text-color;
+}
+
+.active>.page-link{
+    border: 1px solid $button-color;
+    background-color: $button-color;
+}

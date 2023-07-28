@@ -2,17 +2,18 @@
 @import './abstracts/palette.scss';
 @import './layouts/Header.scss';
 @import '@fontsource/roboto';
+@import '../styles/layouts/Products.scss';
 @import '../styles/layouts/Carousel.scss';
 @import '../styles/layouts/Card.scss';
 *{
     text-transform: uppercase;
 }
 
-#Loading{
+.loading{
     background-color: $bg-primary-color;
     height: 400px;
     color: $button-color;
-    border-radius: 20px;
+    z-index: 1200;
 }
 
 a{
