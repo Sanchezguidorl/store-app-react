@@ -8,8 +8,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import LogoImg from '../../assets/logo.png';
 function Header() {
   return (
-    <header>
-        <Navbar id='navheader'  expand='md' className="mb-3 py-2">
+    <header className=''>
+        <Navbar id='navheader'  expand='md' className="mb-3 py-2 bg-white sticky-top">
           <Container>
             <Navbar.Brand href="#"><i><img id='logo-header' src={LogoImg} alt="Logo de tienda de calzados" /></i></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
@@ -48,7 +48,7 @@ function Header() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button className='button-primary' variant="secondary">Search</Button>
+                  <Button className='button-primary' variant="outline-dark">Search</Button>
                 </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

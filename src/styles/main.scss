@@ -8,15 +8,23 @@
     text-transform: uppercase;
 }
 
+#Loading{
+    background-color: $bg-primary-color;
+    height: 400px;
+    color: $button-color;
+    border-radius: 20px;
+}
+
 a{
     color:$primary-text-color;
 }
 
+
 .button-primary{
 color: $primary-text-color;
-background-color: $button-color;
 letter-spacing: 2px;
 transition: .5;
+background-color: $button-color;
 }
 
 .button-primary:hover{
