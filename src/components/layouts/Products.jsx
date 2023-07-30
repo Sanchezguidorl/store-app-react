@@ -6,7 +6,7 @@ import Loading from "./Loading";
 
 function Products() {
   const { productsData, loading, error } = useGetProducts();
-  const [currentPage, setCurrentPage] = useState(2);
+  const [currentPage, setCurrentPage] = useState(1);
   const { products, pages } = usePagination(productsData, currentPage);
   const pageItem = pages.map((page) => (
     <Pagination.Item

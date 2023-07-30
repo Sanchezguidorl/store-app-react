@@ -15,11 +15,9 @@ const getProducts=async()=>{
         if (!response.status=== 200) {
           throw new Error('Error al obtener los productos');
         }
-        console.log(response)
         setProductsData(response.data);
         setLoading(false)
       } catch (error) {
-        console.log(error);
         setError(<ErrorNetwork/>)
         setLoading(false)
       }
@@ -40,8 +38,6 @@ if(data){
   const endIndex= firstIndex+pageLimit;
   const pagesLength=Math.floor(data.length/pageLimit + (data.length%pageLimit===0 ? 0 : 1));
   pages= Array.from({length:pagesLength}, (_, index)=> index+1);
-  console.log(pages)
-  console.log(data)
   products=data.slice(firstIndex,endIndex);
 }
 

@@ -5,8 +5,15 @@
 @import '../styles/layouts/Products.scss';
 @import '../styles/layouts/Carousel.scss';
 @import '../styles/layouts/Card.scss';
+@import '../styles/layouts/Footer.scss';
+
+
+.text-color-secondary{
+    color: $secondary-text-color;
+}
+
 *{
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 .loading{
@@ -16,8 +23,16 @@
     z-index: 1200;
 }
 
+
 a{
     color:$primary-text-color;
+}
+
+a:hover{
+    color:$button-color !important;
+}
+p{
+    color: $secondary-text-color;
 }
 
 
@@ -32,9 +47,6 @@ background-color: $button-color;
 color: $secondary-text-color;
 background-color: $button-hover-color;
 }
-a:hover{
-    color:$button-hover-color !important;
-}
 
 body{
     letter-spacing: 3px;
@@ -47,5 +59,5 @@ body{
 
 
 hr{
-    border-bottom: 2px solid $primary-text-color;
+    border-bottom: 1px solid $primary-text-color;
 }
