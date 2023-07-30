@@ -11,10 +11,10 @@ import SocialMediaIcon from "../SocialMediaIcon";
 
 function Footer() {
   return (
-    <footer id="Footer">
-      <Row className="align-items-start justify-content-evenly h-100 px-4 py-5">
+    <footer id="Footer" className="px-3 px-md-4 py-5">
+      <Row className="align-items-start justify-content-evenly">
         <Col xs={12} md={4}>
-          <ul className="list-unstyled">
+          <ul className="list-unstyled text-break">
             <h4 className="mb-4">Contact</h4>
             <div className="d-flex mt-3">
               <FontAwesomeIcon
@@ -56,7 +56,7 @@ function Footer() {
           md={5}
         >
           <iframe
-          className="w-100"
+          className="w-100 mw-100 p-0"
             height={290}
             src="https://maps.google.com/maps?hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Store)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
