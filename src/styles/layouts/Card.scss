@@ -13,5 +13,17 @@
         top:-20px;
         transform: skewY(-4deg);
     }
+
+    .button-primary {
+        color: $primary-text-color;
+        letter-spacing: 2px;
+        transition: .5;
+        background-color: $button-color;
+    }
+    
+    .button-primary:hover {
+        color: $secondary-text-color;
+        background-color: $button-hover-color;
+    }
  }
 }

@@ -25,7 +25,7 @@ function Footer() {
               />
               <li className="fs-6">Tel(356-428-3349)</li>
             </div>
-            <div className="d-flex mt-3">
+            <div className="d-flex mt-3 align-items-center">
               <FontAwesomeIcon
                 className="fs-5 me-3"
                 icon={faAt}

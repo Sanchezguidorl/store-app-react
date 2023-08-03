@@ -1,18 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CarouselComponent from "./layouts/CarouselComponent";
 import Divider from "./layouts/Divider";
-import Header from "./layouts/Header";
 import Products from "./layouts/Products";
 import { Col, Container, Row } from "react-bootstrap";
 import { faLock, faTruckFast } from "@fortawesome/free-solid-svg-icons";
 import { faCreditCard } from "@fortawesome/free-regular-svg-icons";
-import Footer from "./layouts/Footer";
 
-function Body() {
+function Home() {
 
   return (
     <>
-      <Header />
       <Container>
         <CarouselComponent />
         <Divider text={'Featured'} />
@@ -37,9 +34,8 @@ function Body() {
   </Row>
 </section>
       </Container>
-      <Footer/>
     </>
   );
 }
 
-export default Body;
+export default Home;

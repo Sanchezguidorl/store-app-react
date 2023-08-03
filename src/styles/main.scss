@@ -6,58 +6,73 @@
 @import '../styles/layouts/Carousel.scss';
 @import '../styles/layouts/Card.scss';
 @import '../styles/layouts/Footer.scss';
-
-
-.text-color-secondary{
+@import '../styles/layouts/Search.scss';
+@import '../styles/About.scss';
+@import '../styles/Details.scss';
+@import '../styles/Cart.scss';
+.text-color-secondary {
     color: $secondary-text-color;
 }
 
-*{
+* {
     text-transform: uppercase !important;
 }
 
-.loading{
+.loading {
     background-color: $bg-primary-color;
     height: 400px;
     color: $button-color;
-    z-index: 1200;
+    z-index: 1039;
 }
 
 
-a{
-    color:$primary-text-color;
+a {
+    color: $primary-text-color;
+    text-decoration: none;
 }
 
-a:hover{
-    color:$button-color !important;
-}
-p{
+p {
     color: $secondary-text-color;
 }
 
-
-.button-primary{
-color: $primary-text-color;
-letter-spacing: 2px;
-transition: .5;
-background-color: $button-color;
-}
-
-.button-primary:hover{
-color: $secondary-text-color;
-background-color: $button-hover-color;
-}
-
-body{
+body {
     letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
 }
 
-.overflow-hidden{
+.overflow-hidden {
     overflow: hidden;
 }
 
 
-hr{
+hr {
     border-bottom: 1px solid $primary-text-color;
+}
+
+::-webkit-scrollbar {
+    width: 16px;     /* Tamaño del scroll en vertical */
+    height: 16px;    /* Tamaño del scroll en horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background:$button-color;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color:$button-hover-color;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+background-color: $bg-section-color;
 }

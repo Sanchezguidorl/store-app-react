@@ -1,0 +1,32 @@
+/* Estilos para el contenedor del campo de búsqueda */
+.search-container {
+    position: relative;
+    width: 200px; /* Puedes ajustar el ancho según tus necesidades */
+  }
+  
+  /* Estilos para el div que se despliega con los resultados */
+  .search-results {
+    max-height: 500px;
+    overflow-y: scroll;
+  
+  /* Estilos para los elementos dentro del div de resultados */
+  a.anchor{
+    color: $primary-text-color !important;
+    background-color: #fff !important;
+    letter-spacing: 1px;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .anchor:hover {
+    background-color: $button-color !important;
+    color: #fff !important;
+      }
+    
+}
+
+    .search-results::-webkit-scrollbar {
+    width: 10px;     /* Tamaño del scroll en vertical */
+    height: 10px;    /* Tamaño del scroll en horizontal */
+}

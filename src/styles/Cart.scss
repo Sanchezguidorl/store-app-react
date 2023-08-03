@@ -1,0 +1,36 @@
+#Cart{
+    min-height: 500px;
+    background-color: $bg-section-color;
+    border: 8px solid $button-color;
+    
+    .table{
+color:$secondary-text-color;
+margin-bottom: 40px;
+
+th{
+    font-size: 14px;
+}
+td{
+    font-size: 12px;
+}
+}
+
+.total-price{
+    right:8px;
+    border: 2px solid $button-color;
+}
+}
+
+.button-quantity{
+    background-color: #fff;
+    border: 1px solid $button-color;
+}
+
+.button-quantity:hover {
+    background-color: $bg-primary-color;
+}
+
+.button-quantity:active {
+    color: #fff;
+    background-color: $button-hover-color;
+}

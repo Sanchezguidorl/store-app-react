@@ -1,6 +1,9 @@
 a.page-link{
     color: $primary-text-color;
 }
+.select-input{
+    border-color: $button-color;
+}
 
 .active>.page-link{
     border: 1px solid $button-color;

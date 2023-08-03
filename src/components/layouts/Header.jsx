@@ -1,14 +1,13 @@
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import LogoImg from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import Search from "./Search";
+import { NavLink } from "react-router-dom";
 function Header() {
-  
   return (
     <header className="">
       <Navbar
@@ -17,7 +16,7 @@ function Header() {
         className="mb-3 py-2 bg-white sticky-top"
       >
         <Container>
-          <Navbar.Brand href="#">
+          <Navbar.Brand>
             <i>
               <img
                 id="logo-header"
@@ -44,37 +43,20 @@ function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3 align-items-md-center">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown
-                  title="Dropdown"
-                  id={`offcanvasNavbarDropdown-expand-md`}
-                >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
+                <NavLink className="link-header" to={'/'}>Home</NavLink>
+                <NavLink className="link-header mt-1 mt-md-0" to={'/about'}>About</NavLink>
+                <Search/>
+              <NavLink
+                to='/cart/'
+                className="cart-link p-2 rounded mt-2 mt-md-0 ms-md-2"
+              >
+                <FontAwesomeIcon
+                  id="cart-icon"
+                  icon={faCartShopping}
+                  style={{ color: "#8db8b7" }}
                 />
-              </Form>
-              <Nav.Link href="#action4" className="align-items-center mt-3 mt-md-0 p-2">
-              <FontAwesomeIcon
-                    className="fs-3 fs-md-4"
-                    icon={faCartShopping}
-                    style={{ color: "#8db8b7" }}
-                  />
-              </Nav.Link>
+              </NavLink>
+              </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

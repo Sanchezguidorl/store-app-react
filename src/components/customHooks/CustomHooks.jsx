@@ -29,10 +29,14 @@ getProducts()
 
 }
 
-export const usePagination=(data, currentPage)=>{
+export const usePagination=(data, currentPage,category)=>{
   let pages=[];
   let products='';
+
 if(data){
+  if(category && category!=='All'){
+    data= data.filter((product)=> category.includes(product.category))
+  }
   const pageLimit= 8;
   const firstIndex= (currentPage-1)*pageLimit;
   const endIndex= firstIndex+pageLimit;
@@ -40,6 +44,5 @@ if(data){
   pages= Array.from({length:pagesLength}, (_, index)=> index+1);
   products=data.slice(firstIndex,endIndex);
 }
-
 return {products, pages};
 }

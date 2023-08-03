@@ -1,0 +1,59 @@
+.description{
+    letter-spacing: 1.5px;
+    text-transform: capitalize !important;
+}
+
+.button-add-cart{
+    background-color: $button-color;
+    border: none;
+    border-bottom: 5px solid #749797;
+    color: #eff;
+    animation:beat 1s infinite;
+}
+
+.button-add-cart:hover{
+    background: linear-gradient($button-hover-color, $button-color, #749797 90%);
+    color: #fff;
+}
+
+.input-quantity{
+    width: 40px;
+}
+
+.add-cart-alert{
+width: 100%;
+font-size: 10px;
+margin-top: 20px;
+left: 0;
+background-color: $accent-color;
+color: white;
+animation: fadein 2s 1;
+}
+
+.fade-in{
+animation:fadein 3s ;
+}
+
+@keyframes beat {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
