@@ -10,6 +10,7 @@
 @import '../styles/About.scss';
 @import '../styles/Details.scss';
 @import '../styles/Cart.scss';
+@import '../styles/Contact.scss';
 .text-color-secondary {
     color: $secondary-text-color;
 }
@@ -33,6 +34,7 @@ a {
 
 p {
     color: $secondary-text-color;
+    letter-spacing: 1.5px;
 }
 
 body {

@@ -45,6 +45,7 @@ function Header() {
               <Nav className="justify-content-end flex-grow-1 pe-3 align-items-md-center">
                 <NavLink className="link-header" to={'/'}>Home</NavLink>
                 <NavLink className="link-header mt-1 mt-md-0" to={'/about'}>About</NavLink>
+                <NavLink className="link-header mt-1 mt-md-0" to={'/contact'}>Contact</NavLink>
                 <Search/>
               <NavLink
                 to='/cart/'

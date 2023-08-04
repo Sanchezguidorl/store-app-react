@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Search() {
   const [searchInput, setSearchInput] = useState("");
-  const {productsData, error } = useGetProducts();
+  const { productsData, error } = useGetProducts();
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [showResults, setShowResults] = useState(false);
 
@@ -53,24 +53,30 @@ function Search() {
         value={searchInput}
       />
 
-      {showResults && (
-        <div
-          id="searchResults"
-          className="search-results position-absolute top-100 w-100 bg-white border"
-        >
-          {filteredProducts &&
-            filteredProducts.map((product) => (
-              <NavLink
-                className="p-2 text-break anchor"
-                key={product.title}
-                style={{ cursor: "pointer", color: "blue" }}
-                to={`/product/${product.id}`}
-              >
-                {product.title}
-              </NavLink>
-            ))}
-        </div>
-      )}
+      {
+      showResults &&
+      <>{ error ?
+      <div className="px-1 w-100 position-absolute top-100 w-100 bg-secondary py-3 text-center text-white rounded border"><h6>Error: products are not available at this time. </h6></div>
+:
+         
+            <div
+              id="searchResults"
+              className="search-results position-absolute top-100 w-100 bg-white border"
+            >
+              {filteredProducts &&
+                filteredProducts.map((product) => (
+                  <NavLink
+                    className="p-2 text-break anchor"
+                    key={product.title}
+                    style={{ cursor: "pointer", color: "blue" }}
+                    to={`/product/${product.id}`}
+                  >
+                    {product.title}
+                  </NavLink>
+                ))}
+            </div>
+}</>
+        }
     </div>
   );
 }

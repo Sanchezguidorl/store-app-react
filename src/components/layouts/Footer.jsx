@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Row } from "react-bootstrap";
-import SocialMediaIcon from "../SocialMediaIcon";
+import SocialMediaIcon from "../layouts/SocialMediaIcon";
 
 function Footer() {
   return (
