@@ -1,4 +1,7 @@
-import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faSquareFacebook,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faAt,
   faEnvelope,
@@ -44,19 +47,20 @@ function Footer() {
               <li className="fs-6">1 Grafton Street-Dublin-Ireland</li>
             </div>
             <div className="d-flex mt-4">
-              <SocialMediaIcon icon={faSquareFacebook}/>   
-              <SocialMediaIcon icon={faSquareInstagram}/>   
-              <SocialMediaIcon icon={faEnvelope}/>   
+              <SocialMediaIcon icon={faSquareFacebook} />
+              <SocialMediaIcon icon={faSquareInstagram} />
+              <SocialMediaIcon icon={faEnvelope} />
             </div>
           </ul>
         </Col>
+        {/*Mapa con ubicación del negocio*/}
         <Col
           className="mt-3 mt-md-0 d-flex justify-content-center"
           xs={12}
           md={5}
         >
           <iframe
-          className="w-100 mw-100 p-0"
+            className="w-100 mw-100 p-0"
             height={290}
             src="https://maps.google.com/maps?hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(Store)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>

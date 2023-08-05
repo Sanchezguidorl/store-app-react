@@ -3,37 +3,40 @@
     color: $primary-text-color;
     border-bottom: 2px solid $div-color;
 
-a{
-    padding: 8px;
-    color:$secondary-text-color;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-}
-
-a.active, a:hover{
-    color:#fff;
-    background-color: $button-hover-color;
-}
-a.active{
-    color:#fff;
-    background-color: $button-hover-color;
-}
-
-.cart-link:hover{
-    background-color: $bg-section-color;
-}
-
-.cart-link #cart-icon{
-    font-size: 36px;
-}
-.cart-link.active{
-    background-color: $bg-primary-color;
-}
-
-@media(min-width:768px){
-    .cart-link #cart-icon{
-        font-size: 26px;
+    a {
+        padding: 8px;
+        color: $secondary-text-color;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
     }
+
+    a.active,
+    a:hover {
+        color: #fff;
+        background-color: $button-hover-color;
+    }
+
+    a.active {
+        color: #fff;
+        background-color: $button-hover-color;
+    }
+
+    .cart-link:hover {
+        background-color: $bg-section-color;
+    }
+
+    .cart-link #cart-icon {
+        font-size: 36px;
+    }
+
+    .cart-link.active {
+        background-color: $bg-primary-color;
+    }
+
+    @media(min-width:768px) {
+        .cart-link #cart-icon {
+            font-size: 26px;
+        }
     }
 }
 

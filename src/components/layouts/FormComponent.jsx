@@ -1,9 +1,9 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function FormComponent() {
   return (
-    <Form className='mb-5 border p-4 rounded'>
+    <Form className="mb-5 border p-4 rounded">
       <Form.Group className="mb-3" controlId="formBasicName">
         <Form.Label>Your name or company name</Form.Label>
         <Form.Control type="email" placeholder="Enter your name" />
@@ -21,11 +21,11 @@ function FormComponent() {
         <Form.Control
           as="textarea"
           placeholder="Leave a comment here"
-          style={{ height: '100px' }}
+          style={{ height: "100px" }}
         />
       </Form.Group>
-      
-      <Button variant="primary" type="submit" className='submit-button px-4'>
+
+      <Button variant="primary" type="submit" className="submit-button px-4">
         Submit
       </Button>
     </Form>

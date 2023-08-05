@@ -1,11 +1,12 @@
-a.page-link{
+a.page-link {
     color: $primary-text-color;
 }
-.select-input{
+
+.select-input {
     border-color: $button-color;
 }
 
-.active>.page-link{
+.active>.page-link {
     border: 1px solid $button-color;
     background-color: $button-color;
 }

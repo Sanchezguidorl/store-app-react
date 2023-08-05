@@ -1,9 +1,9 @@
-.banner{
+.banner {
     position: relative;
     max-height: 400px;
     overflow: hidden;
 
-    h1{
+    h1 {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-color: #f1f1f146;
         top: 30%;
@@ -11,26 +11,27 @@
     }
 }
 
-#Questions{
+#Questions {
     max-width: 800px;
     margin: 30px auto;
 
-.accordion-button{
-    transition: .5s;
-}
+    .accordion-button {
+        transition: .5s;
+    }
 
-.accordion-button:focus, .accordion-button[aria-expanded="true"]{
-    color: #fff;
-    background-color: $button-hover-color;
-    box-shadow: none;
-}
+    .accordion-button:focus,
+    .accordion-button[aria-expanded="true"] {
+        color: #fff;
+        background-color: $button-hover-color;
+        box-shadow: none;
+    }
 
-.accordion-button[aria-expanded="true"]::after{
-background-image:var(--bs-accordion-btn-icon);
-}
+    .accordion-button[aria-expanded="true"]::after {
+        background-image: var(--bs-accordion-btn-icon);
+    }
 
-.accordion-body{
-    font-size: 12px;
-    letter-spacing: 1px;
-}
+    .accordion-body {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
 }

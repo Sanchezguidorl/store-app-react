@@ -1,27 +1,28 @@
-#Cart{
+#Cart {
     min-height: 500px;
     background-color: $bg-section-color;
     border: 8px solid $button-color;
-    
-    .table{
-color:$secondary-text-color;
-margin-bottom: 40px;
 
-th{
-    font-size: 14px;
-}
-td{
-    font-size: 12px;
-}
+    .table {
+        color: $secondary-text-color;
+        margin-bottom: 40px;
+
+        th {
+            font-size: 14px;
+        }
+
+        td {
+            font-size: 12px;
+        }
+    }
+
+    .total-price {
+        right: 8px;
+        border: 2px solid $button-color;
+    }
 }
 
-.total-price{
-    right:8px;
-    border: 2px solid $button-color;
-}
-}
-
-.button-quantity{
+.button-quantity {
     background-color: #fff;
     border: 1px solid $button-color;
 }
@@ -35,11 +36,12 @@ td{
     background-color: $button-hover-color;
 }
 
-.complete-order{
+.complete-order {
     color: #fff;
     background-color: $button-color;
 }
-.complete-order:hover{
+
+.complete-order:hover {
     color: #fff;
-    background-color:$button-hover-color;
+    background-color: $button-hover-color;
 }

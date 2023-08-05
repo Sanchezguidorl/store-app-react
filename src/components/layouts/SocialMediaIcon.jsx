@@ -3,10 +3,15 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 
 function SocialMediaIcon({ icon }) {
-    const [hoverIcon, setHoverIcon]= useState(false);
+  const [hoverIcon, setHoverIcon] = useState(false);
   return (
     <>
-      <a onMouseEnter={()=>setHoverIcon(true)} onMouseLeave={()=>setHoverIcon(false)} href="" className="ms-2">
+      <a
+        onMouseEnter={() => setHoverIcon(true)}
+        onMouseLeave={() => setHoverIcon(false)}
+        href=""
+        className="ms-2"
+      >
         <li>
           <FontAwesomeIcon
             bounce={hoverIcon}
