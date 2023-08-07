@@ -12,14 +12,14 @@ function Products() {
   const [categorySelected, setCategorySelected] = useState("");
   /* Almacena el valor de la página actual para poder definir los resultados a mostrar en base al valor seleccionado en la paginación*/
   const [currentPage, setCurrentPage] = useState(1);
-    /* Almacena la cantidad de páginas con las que contará el paginador en base a la cantinad de productos a filtrar */
+  /* Almacena la cantidad de páginas con las que contará el paginador en base a la cantinad de productos a filtrar */
   const { products, pages } = usePagination(
     productsData,
     currentPage,
     categorySelected
   );
 
-    /* Almacena los nombres de todas las categorías */
+  /* Almacena los nombres de todas las categorías */
   const [categories, setCategories] = useState();
 
   /* Asigna la respuesta de la api de categorías al estado respectivo*/

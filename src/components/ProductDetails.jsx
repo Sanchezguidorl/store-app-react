@@ -100,7 +100,7 @@ function ProductDetails() {
                 <hr />
                 <p className="description">{productDetail[0].description}</p>
                 <label htmlFor="">
-                  Cantidad
+                  Quantity
                   <input
                     type="number"
                     onChange={quantityChange}
@@ -121,7 +121,7 @@ function ProductDetails() {
                       className="py-3 rounded button-add-cart d-flex align-items-center justify-content-center"
                       size="lg"
                     >
-                      AGREGAR AL CARRITO
+                      ADD TO CART
                       <FontAwesomeIcon
                         className="ms-2 fs-6 add-icon"
                         icon={faPlus}
@@ -135,7 +135,7 @@ function ProductDetails() {
                       size="lg"
                       style={{ color: "#212529", cursor: "inherit" }}
                     >
-                      EN EL CARRITO
+                      IN THE CART
                       <FontAwesomeIcon
                         className="ms-2 fs-6 add-icon"
                         icon={faCartShopping}
@@ -148,7 +148,7 @@ function ProductDetails() {
                 {/* Alerta */}
                 {alert && (
                   <p className="add-cart-alert text-center position-absolute py-1">
-                    Producto añadido al carrito
+                    Product added to cart
                   </p>
                 )}
               </Col>

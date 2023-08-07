@@ -3,20 +3,20 @@
     color: $primary-text-color;
     border-bottom: 2px solid $div-color;
 
-    a {
+    .link-header{
         padding: 8px;
         color: $secondary-text-color;
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;
     }
 
-    a.active,
-    a:hover {
+    .link-header.active,
+    .link-header:hover {
         color: #fff;
         background-color: $button-hover-color;
     }
 
-    a.active {
+    .link-header.active {
         color: #fff;
         background-color: $button-hover-color;
     }

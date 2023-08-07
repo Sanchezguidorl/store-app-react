@@ -17,6 +17,7 @@ function Header() {
       >
         <Container>
           <Navbar.Brand>
+            <NavLink to={'/'}>
             <i>
               <img
                 id="logo-header"
@@ -24,6 +25,7 @@ function Header() {
                 alt="Logo de tienda de calzados"
               />
             </i>
+            </NavLink>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
           <Navbar.Offcanvas

@@ -13,7 +13,7 @@ function Contact() {
       <FormComponent />
       <h2 className="h4 text-center">Why Choose Store?</h2>
       <Row className="text-center mb-5 mt-4">
-        <Col xs={12} md={6} lg={3} className="border rounded p-2 mb-1 mb-lg-0">
+        <Col xs={12} md={6} lg={3} className="border rounded pb-2 pt-4 mb-1 mb-lg-0">
           <p>
             <b>🌟 Quality Assured</b>: Our products undergo rigorous quality
             checks to ensure they meet the highest standards. We take pride in
@@ -21,7 +21,7 @@ function Contact() {
             expectations.
           </p>
         </Col>
-        <Col xs={12} md={6} lg={3} className="border rounded p-2 mb-1 mb-lg-0">
+        <Col xs={12} md={6} lg={3} className="border rounded pb-2 pt-4 mb-1 mb-lg-0">
           <p>
             <b>🚀 Innovation at Its Best</b>: Stay ahead of the curve with our
             cutting-edge and trendsetting merchandise. Our team keeps a close
@@ -29,7 +29,7 @@ function Contact() {
             products.
           </p>
         </Col>
-        <Col xs={12} md={6} lg={3} className="border rounded p-2 mb-1 mb-lg-0">
+        <Col xs={12} md={6} lg={3} className="border rounded pb-2 pt-4 mb-1 mb-lg-0">
           <p>
             <b>🤝 Partnership Approach</b>: We don&apos;t just consider you a
             customer – we view you as a partner. Your success is our success,
@@ -37,7 +37,7 @@ function Contact() {
             growth.
           </p>
         </Col>
-        <Col xs={12} md={6} lg={3} className="border rounded p-2 mb-1 mb-lg-0">
+        <Col xs={12} md={6} lg={3} className="border rounded pb-2 pt-4 mb-1 mb-lg-0">
           <p>
             <b>💡 Customization Options</b>: We understand that each business is
             unique. That&apos;s why we offer customization options that let you

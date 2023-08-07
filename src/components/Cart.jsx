@@ -95,7 +95,7 @@ function Cart() {
           </>
         )}
       </Container>
-      {!products[0] && (
+      {products[0] && (
         <Row className="mt-4 mb-5 justify-content-center mx-2">
           <Col xs={12} sm={8} md={6} lg={3}>
             <button className="w-100 btn complete-order border-black">
